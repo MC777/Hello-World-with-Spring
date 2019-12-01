@@ -1,14 +1,13 @@
 package io.github.mc777.Hello.World.with.Spring.lang;
 
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 class LangService {
     private LangRepository repository;
-
-    LangService() {
-        this(new LangRepository());
-    }
 
     LangService(LangRepository repository) {
         this.repository = repository;
