@@ -15,7 +15,7 @@ class Todo {
     @GenericGenerator(name = "inc", strategy = "increment")
     private Integer id;
     private String text;
-    private Boolean done;
+    private boolean done;
 
     /**
      * Hibernate (JPA) needs it.
@@ -43,7 +43,7 @@ class Todo {
         return done;
     }
 
-    public void setDone(Boolean done) {
+    public void setDone(boolean done) {
         this.done = done;
     }
 }
